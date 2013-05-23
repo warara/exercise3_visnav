@@ -1,0 +1,7 @@
+build/
+bin/
+docs/
+*.cfgc
+__init__.py
+PidParameterConfig.h
+PidParameterConfig.py
