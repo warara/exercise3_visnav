@@ -1,0 +1,285 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.1.20)  26 MAY 2013 17:49
+entering extended mode
+ %&-line parsing enabled.
+**Exercise03.tex
+(./Exercise03.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/ucs/ucs.sty
+Package: ucs 2004/10/17 UCS: Unicode input support
+
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2004/10/17 UCS: Unicode global data
+)
+\uc@secondtry=\count87
+\uc@combtoks=\toks14
+\uc@combtoksb=\toks15
+\uc@temptokena=\toks16
+)
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+\lst@mode=\count88
+\lst@gtempboxa=\box26
+\lst@token=\toks18
+\lst@length=\count89
+\lst@currlwidth=\dimen103
+\lst@column=\count90
+\lst@pos=\count91
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count92
+\lst@lineno=\count93
+\lst@maxwidth=\dimen106
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count94
+\lst@skipnumbers=\count95
+\lst@framebox=\box27
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks20
+\ex@=\dimen107
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen108
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count96
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count97
+\leftroot@=\count98
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count99
+\DOTSCASE@=\count100
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen109
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
+\dotsspace@=\muskip10
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
+\tag@help=\toks21
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
+\andhelp@=\toks22
+\eqnshift@=\dimen110
+\alignsep@=\dimen111
+\tagshift@=\dimen112
+\tagwidth@=\dimen113
+\totwidth@=\dimen114
+\lineht@=\dimen115
+\@envbody=\toks23
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count108
+))
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+)
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen118
+\extrarowheight=\dimen119
+\NC@list=\toks25
+\extratabsurround=\skip55
+\backup@length=\skip56
+)
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip57
+\subfigcapskip=\skip58
+\subfigcaptopadj=\dimen120
+\subfigbottomskip=\skip59
+\subfigcapmargin=\dimen121
+\subfiglabelskip=\skip60
+\c@subfigure=\count109
+\c@lofdepth=\count110
+\c@subtable=\count111
+\c@lotdepth=\count112
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip61
+\subfig@bottom=\skip62
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/listing.sty
+Package: listing 1999/05/25
+
+Package `listing', V1.2, <1999/05/25>
+\c@listing=\count113
+)
+
+LaTeX Warning: Unused global option(s):
+    [14pt].
+
+(./Exercise03.aux)
+\openout1 = `Exercise03.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+ (/usr/share/texmf-texlive/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
+)
+\c@lstlisting=\count114
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count115
+\scratchdimen=\dimen122
+\scratchbox=\box30
+\nofMPsegments=\count116
+\nofMParguments=\count117
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count118
+\MPscratchDim=\dimen123
+\MPnumerator=\count119
+\everyMPtoPDFconversion=\toks27
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
+ (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<control_flight.png, id=14, 480.79625pt x 329.23pt>
+File: control_flight.png Graphic file (type png)
+ <use control_flight.png>
+[2 <./control_flight.png (PNG copy)>] (./Exercise03.aux) ) 
+Here is how much of TeX's memory you used:
+ 3603 strings out of 493848
+ 48047 string characters out of 1152823
+ 108562 words of memory out of 3000000
+ 6846 multiletter control sequences out of 15000+50000
+ 11502 words of font info for 45 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 27i,10n,43p,331b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmsy7.pfb>
+Output written on Exercise03.pdf (2 pages, 106878 bytes).
+PDF statistics:
+ 46 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
