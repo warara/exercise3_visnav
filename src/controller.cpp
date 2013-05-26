@@ -1,6 +1,7 @@
 
 #include <ros/ros.h>
 #include <dynamic_reconfigure/server.h>
+#include <math.h>
 
 #include <std_msgs/Bool.h>
 #include <geometry_msgs/Twist.h>
@@ -11,14 +12,21 @@
 
 class PidController
 {
+private:
+  float error_old;
+  float ierror;
+
 public:
   float c_proportional;
   float c_integral;
   float c_derivative;
 
+
   PidController()
   {
     c_proportional = c_integral = c_derivative = 0;
+    error_old = 0;
+    ierror = 0;
     reset();
   }
 
@@ -26,7 +34,11 @@ public:
   {
     // derivative
     float derror = 0;
-    // TODO: implement numerical differentiation
+
+    if(error_old){
+    	derror = error - error_old;
+    }
+    error_old = error;
     
     return getCommand(t, error, derror);
   }
@@ -34,14 +46,19 @@ public:
   float getCommand(const ros::Time& t, float error, float derror)
   {
     // TODO: implement PID control law
-    return 0.0;
+	ierror = ierror + error;
+
+	float u; // Control input
+	u = c_proportional*error + c_derivative*derror + c_integral*ierror;
+
+    return u;
   }
 
   // resets the internal state
   void reset()
   {
   }
-private:
+
 };
 
 class ArdroneController
@@ -144,14 +161,21 @@ public:
   void calculateContolCommand(const ros::Time& t)
   {
     // TODO: implement error computation and calls to pid controllers to get the commands
+	float e_x, e_y, e_yaw, e_x_local, e_y_local;
+	e_x = goal_x - state.x;
+	e_y = goal_y - state.y;
+	e_yaw = goal_yaw - state.yaw;
 
     // use this yaw to rotate commands from global to local frame
     float yaw = -(state.yaw + M_PI_2);
-    
-    twist.linear.x = 0.0; // = ??
-    twist.linear.y = 0.0; // = ??
+    e_x_local = cos(yaw)*e_x - sin(yaw)*e_y;
+    e_y_local = sin(yaw)*e_x + cos(yaw)*e_y;
 
-    float u_yaw = 0.0; // = ??
+    
+    twist.linear.x = pid_x.getCommand(t,e_x_local);
+    twist.linear.y = pid_y.getCommand(t,e_y_local);
+
+    float u_yaw = pid_yaw.getCommand(t,e_yaw);
 
     // normalize angular control command
     twist.angular.z = atan2(sin(u_yaw), cos(u_yaw));

@@ -1,6 +1,9 @@
 build/
 bin/
 docs/
+.project
+.pydevproject
+.cproject
 *.cfgc
 __init__.py
 PidParameterConfig.h
