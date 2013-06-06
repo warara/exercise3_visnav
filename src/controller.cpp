@@ -154,21 +154,23 @@ public:
 	// control in xy and yaw
 	void calculateContolCommand(const ros::Time& t) {
 		// TODO: implement error computation and calls to pid controllers to get the commands
-		float e_x, e_y, e_yaw, e_x_local, e_y_local;
+		float e_x, e_y, e_yaw;
 		e_x = goal_x - state.x;
 		e_y = goal_y - state.y;
 		e_yaw = goal_yaw - state.yaw;
 
 		// use this yaw to rotate commands from global to local frame
 		float yaw = -(state.yaw + M_PI_2);
-		e_x_local = cos(yaw) * e_x - sin(yaw) * e_y;
-		e_y_local = sin(yaw) * e_x + cos(yaw) * e_y;
 
-		twist.linear.x = pid_x.getCommand(t, e_x_local);
-		twist.linear.y = pid_y.getCommand(t, e_y_local);
+//		float u_x = pid_x.getCommand(t, e_x);
+//		float u_y = pid_y.getCommand(t, e_y);
 
-//		twist.linear.x = pid_x.getCommand(t, e_x_local,-state.vx);
-//		twist.linear.y = pid_y.getCommand(t, e_y_local,-state.vy);
+		float u_x = pid_x.getCommand(t, e_x,-state.vx);
+		float u_y = pid_y.getCommand(t, e_y,-state.vy);
+
+
+		twist.linear.x = cos(yaw) * u_x - sin(yaw) * u_y;
+		twist.linear.y = sin(yaw) * u_x + cos(yaw) * u_y;
 
 		float u_yaw = pid_yaw.getCommand(t, e_yaw);
 
