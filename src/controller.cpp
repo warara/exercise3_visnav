@@ -167,6 +167,9 @@ public:
 		twist.linear.x = pid_x.getCommand(t, e_x_local);
 		twist.linear.y = pid_y.getCommand(t, e_y_local);
 
+//		twist.linear.x = pid_x.getCommand(t, e_x_local,-state.vx);
+//		twist.linear.y = pid_y.getCommand(t, e_y_local,-state.vy);
+
 		float u_yaw = pid_yaw.getCommand(t, e_yaw);
 
 		// normalize angular control command
