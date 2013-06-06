@@ -32,13 +32,13 @@
 	
 	\subsection{Define how the error integral can be computed in the discrete case}
 	\begin{eqnarray*}
-		e_{I,t}&=&e_{I,t-1}+e_{t}. \\
+		e_{I,t}&=&e_{I,t-1}+e_{t}*\Delta t. \\
 		e_{I,0}&=&0.
 	\end{eqnarray*}
 	
 	\subsection{Define a formula for the discrete error derivative}
 	$$
-		e_{D,t}=e_t - e_{t-1}
+		e_{D,t}=\frac{ e_t - e_{t-1}}{\Delta t}
 	$$
 	
 	\subsection{Specify the discrete PID control law}
