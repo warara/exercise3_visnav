@@ -27,12 +27,13 @@
 \section{}
 	\subsection{Specify the control law of a PID controller}
 	$$
-		u(t)=K_P \  e(t) + K_D \ \dot{e}(t) + K_I \int_{-\infty}^t e(t)\,dt.
+		u(t)=K_P \  e(t) + K_D \ \dot{e}(t) + K_I \int_{-\infty}^t e(t)\,dt
 	$$
-	
+		with $e(t)=x_{desired}-x_{actual}$.
 	\subsection{Define how the error integral can be computed in the discrete case}
 	\begin{eqnarray*}
-		e_{I,t}&=&e_{I,t-1}+e_{t}*\Delta t. \\
+		e_{I,t}&=&e_{I,t-1}+e_{t}\Delta t. \\
+		\text{with}\\
 		e_{I,0}&=&0.
 	\end{eqnarray*}
 	
@@ -65,12 +66,46 @@
 				\end{array}\right)\] 
 				
 	\refstepcounter{subsection}
-	\subsection{Screenshol of RVIZ}
+	\subsection{Screenshot of RVIZ}
 	\begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.7]{control_flight.png}
+	\includegraphics[width=\textwidth]{control_flight.png}
   	\caption{screenshot from RVIZ to indicate the x,y,yaw control command}
     \label{graph:RVIZ control}
 	\end{figure}
+	
+	\subsection{Screenshot of RXPlot}
+		\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{rxplot01.png}
+  	\caption{screenshot from RXPlot using the numerical derivative}
+    \label{graph:RVIZ control}
+	\end{figure}
+	
+		\subsection{Screenshot of RXPlot}
+		\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{rxplot02.png}
+  	\caption{screenshot from RXPlot using the negative velocity}
+    \label{graph:RVIZ control}
+	\end{figure}
+	Numerical differentiation is very susceptible to measurement errors, making the derivative very noisy.
+	
+	\section{}
+	
+	\refstepcounter{subsection}
+	\subsection{Final PID gains}
+	
+	\begin{center}
+		\begin{tabular}{r c c c}
+					& P-Gain 	& I-Gain 	& D-Gain\\
+			x 	& 0.15		& 0				&	0.2  \\
+			y 	& 0.15		& 0				& 0.2		\\
+			\phi& 0.1			& 0				& 0.1
+		\end{tabular}
+	\end{center}
+	
+	
+	
 	
 \end{document}
